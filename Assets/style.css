@@ -7,81 +7,112 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aquamarine;
     background-color: darkslategray;
-    padding: 20px;
-    margin-bottom: 50px;
-    height: 100px;
+    padding: 15px;
+    /* padding-bottom: -5px; */
+    height: 45px;
+    width: 100%;
   }
-  
-  header h1 {
-  border-style: solid;
+
+  nav {
+    border: solid 5 px aquamarine;
+    width: 100%;
+    background-color: aquamarine;
   }
-  
-  header ul {
-    float: right;
-    list-style-type: none;
-  }
-  
-  header li {
-    font-size: 20px;
-    display: inline-block;
-    padding: 30px;
-  }
-  
-  a {
-    color: aliceblue;
+
+nav ul {
+  list-style: non;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav a:hover {
+  color: aquamarine;
+  background-color: darkslategray;
+
+}
+
+  nav a {
     text-decoration: none;
-  }
-  
-  main {
+    padding: 15px;
+    font-size: 22px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   
-  main h1 {
-    text-align: center;
-  }
-  
-  main p {
-    margin-left: 350px;
-  }
-  
-  main nav section {
-    border: 2px dotted black;
-  }
-  
-  main h2 {
-    padding: 20px;
-    margin-left: 350px;
-  }
-  
-  body  {
-    background-color: bisque;
-  }
-  
-  section h1 {
-    text-align: left;
-  
-  }
-  
-  footer {
-    padding: 40px;
-    
-  
-  }
-  
-  footer {
-    margin-top: 40px;
-    margin-left: 170px;
-  }
-  
-  footer nav {  
-    
-    font-size: 20px;
-    float: right;
-  }
-  
-  footer a {
-    padding: 75px;
-    color: blueviolet;
-  }
+body  {
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  margin-right: 10px;
+  display: flex;
+}
+.aboutme, aside  {
+  padding: 15px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.images1 {
+  padding-top: 10px;
+  vertical-align: bottom;
+}
+
+.images2 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+aside, p {
+  flex: 30%;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 20px;
+  border: black 3px solid;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end; /* This is what allows the image to push right, however I have no clue why.*/
+}
+
+div {
+  /* border: 5px black solid; */
+  flex: 70%;
+}
+
+footer {
+  color: aquamarine;
+  background-color: darkslategray;
+  width: 100%;
+  /* display: flex; */
+}
+
+footer h2 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+footer a {
+color: white;
+padding: 15px;
+text-decoration: none;
+font-size: 18px;
+text-align: end;
+}
+
+footer a:hover {
+  color: darkslategray;
+  background-color: aquamarine;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
